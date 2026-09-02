@@ -15,7 +15,7 @@
     "slot": "朝",
     "video": "videos/007_yoru.mp4",
     "caption": "同じ席にこだわる人が、席そのものを見ていないことがあります。\n何を見ていると思いますか。\n\n#chikatabi #旅行 #飛行機",
-    "status": "draft"
+    "status": "ready"
   },
   {
     "id": "008",
@@ -23,14 +23,7 @@
     "slot": "朝",
     "video": "videos/008_asa.mp4",
     "caption": "仙台まで来て、牛タンを食べずに帰ります。\nもったいないと思いますか、それとも理由があると思いますか。\n\n#chikatabi #旅行 #飛行機",
-    "status": "draft"
-  },
-  {
-    "id": "008b",
-    "date": "2026-09-05",
-    "slot": "朝",
-    "video": "videos/008_yoru.mp4",
-    "caption": "空港のグルメを一度も食べない客がいます。\n興味が無いのだと思いますか、それとも別の理由があると思いますか。\n\n#chikatabi #旅行 #飛行機",
-    "status": "draft"
+    "status": "draft",
+    "note": "牛タンのドアップを頭に差し替えたv2。台本の1文目と2文目も入れ替えてある"
   }
 ]
