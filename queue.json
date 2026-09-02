@@ -10,12 +10,13 @@
     "result": "https://www.instagram.com/reel/DcxJEmYE0nF/ (media id 17984765697058087)"
   },
   {
-    "id": "007b",
+    "id": "009",
     "date": "2026-09-03",
     "slot": "朝",
-    "video": "videos/007_yoru.mp4",
-    "caption": "同じ席にこだわる人が、席そのものを見ていないことがあります。\n何を見ていると思いますか。\n\n#chikatabi #旅行 #飛行機",
-    "status": "ready"
+    "video": "videos/009_asa.mp4",
+    "caption": "次の便まで95分しかないのに、急ぎません。\nのんびりしているだけだと思いますか、それとも理由があると思いますか。\n\n#chikatabi #旅行 #飛行機",
+    "status": "draft",
+    "note": "2026-09-02 CHIKA指示で007bと差し替え。キャプションは未承認のためdraft。5〜8秒に中距離の横顔3名あり（A案で了承済み）"
   },
   {
     "id": "008",
