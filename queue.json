@@ -1,0 +1,36 @@
+[
+  {
+    "id": "007",
+    "date": "2026-09-02",
+    "slot": "朝",
+    "video": "videos/007_asa.mp4",
+    "caption": "空いているのに、毎回同じ席に座ります。\nこだわりだと思いますか、それとも理由があると思いますか。\n\n#chikatabi #旅行 #飛行機",
+    "status": "done",
+    "posted_at": "2026-09-02T11:16:17+09:00",
+    "result": "https://www.instagram.com/reel/DcxJEmYE0nF/ (media id 17984765697058087)"
+  },
+  {
+    "id": "007b",
+    "date": "2026-09-03",
+    "slot": "朝",
+    "video": "videos/007_yoru.mp4",
+    "caption": "同じ席にこだわる人が、席そのものを見ていないことがあります。\n何を見ていると思いますか。\n\n#chikatabi #旅行 #飛行機",
+    "status": "draft"
+  },
+  {
+    "id": "008",
+    "date": "2026-09-04",
+    "slot": "朝",
+    "video": "videos/008_asa.mp4",
+    "caption": "仙台まで来て、牛タンを食べずに帰ります。\nもったいないと思いますか、それとも理由があると思いますか。\n\n#chikatabi #旅行 #飛行機",
+    "status": "draft"
+  },
+  {
+    "id": "008b",
+    "date": "2026-09-05",
+    "slot": "朝",
+    "video": "videos/008_yoru.mp4",
+    "caption": "空港のグルメを一度も食べない客がいます。\n興味が無いのだと思いますか、それとも別の理由があると思いますか。\n\n#chikatabi #旅行 #飛行機",
+    "status": "draft"
+  }
+]
