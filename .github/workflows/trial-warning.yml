@@ -1,0 +1,40 @@
+name: Windsorの試用期限を知らせる
+
+# Windsor.ai の無料試用が切れると、毎朝の自動投稿が静かに止まる。
+# 気づかないまま何日も投稿が抜けるのを防ぐため、期限が近づいたら
+# わざと失敗させて GitHub からメールを飛ばす。
+#
+# 期限は 2026-09-02 時点の画面表示「フルアクセス：残り29日」から算出した。
+# 有料に切り替えたか、別の経路へ移したら、このワークフローは消してよい。
+
+on:
+  schedule:
+    # 毎週月曜 23:00 UTC（＝火曜 8:00 日本時間）
+    - cron: "0 23 * * 1"
+  workflow_dispatch:
+
+jobs:
+  warn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 期限までの残り日数を見る
+        run: |
+          ENDS="2026-10-01"
+          WARN_FROM="2026-09-21"
+          TODAY=$(date -u +%F)
+          LEFT=$(( ( $(date -u -d "$ENDS" +%s) - $(date -u -d "$TODAY" +%s) ) / 86400 ))
+
+          echo "今日: $TODAY / 期限: $ENDS / 残り $LEFT 日"
+
+          if [ "$TODAY" \< "$WARN_FROM" ]; then
+            echo "まだ知らせる時期ではありません。"
+            exit 0
+          fi
+
+          echo "::error::Windsor.ai の無料試用が残り $LEFT 日です（期限 $ENDS）。"
+          echo "::error::切れると毎朝7:30の Instagram 自動投稿が止まります。"
+          echo "::error::対応を決めてください: 有料に上げる / Meta開発者アカウント経由へ移す / アプリの予約投稿に戻す。"
+          echo "::error::詳細は /Users/chika/chikatabi-Instagram/引き継ぎ_Instagram運用.md"
+
+          # わざと失敗させる。GitHub が失敗を通知してくれるのが目的。
+          exit 1
